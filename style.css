@@ -3,17 +3,22 @@
     padding: 0;
     }
 
-h1 {color: #F42272;}
-body {background-color: #232E21}
-
+body {background-color: var(--g100)}
+:root {
+    --primary: #870000;
+    --secondary: #114D10;
+    --accent: #222E56;
+    --g100: #EFE4DA;
+}
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: start;
     padding: 0 25px;
-    width: 1440px;
+    width: 100vw;
     margin-top: 14px;
+    background-color: var(--primary)
   }
   
   nav ul {
@@ -35,3 +40,6 @@ body {background-color: #232E21}
   }
 
   p {font-family: 'Akshar', sans-serif;}
+
+  .logo img {width: 16vw;
+    height: auto;}
