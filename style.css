@@ -6,6 +6,7 @@
 h1 {color: #F42272;}
 body {background-color: #232E21}
 
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,7 @@ body {background-color: #232E21}
   nav ul {
     display: flex;
     list-style: none;
-    font-family: "Bowlby One SC", sans-serif;
+    font-family: 'Bowlby One', cursive;
   }
   
   ul li a {
@@ -32,3 +33,5 @@ body {background-color: #232E21}
   a {
     text-decoration: none;
   }
+
+  p {font-family: 'Akshar', sans-serif;}
