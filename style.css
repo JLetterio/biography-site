@@ -1,7 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    }
+* { margin: 0;
+    padding: 0;}
+
+    /* Colors/Fonts */
 
 body {background-color: var(--g100)}
 :root {
@@ -11,20 +11,68 @@ body {background-color: var(--g100)}
     --g100: #EFE4DA;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4 {font-family: 'Bowlby One', cursive;
+}
+
+h1 {line-height: 75pt;
+font-size: 48pt;}
+
+h2 {line-height: 26pt;
+font-size: 28pt;}
+
+h3 {line-height: 22pt;
+font-size: 24pt;}
+
+h4 {
+  line-height: 18pt;
+font-size: 18pt;}
+
+h5,p,.cardcopy,.bcbold {
+  font-family: 'Akshar', sans-serif;
+}
+
+h5 {line-height: 30pt;
+font-size: 24pt;
+font-weight: 600;}
+
+p {line-height: 36pt;
+font-size: 20pt;
+font-weight: 300;}
+
+.cardcopy {line-height: 28pt;
+font-size: 16pt;
+font-weight: 300;}
+
+.bcbold {line-height: 25pt;
+font-size: 16pt;
+font-weight: 600;}
+
+
+/* Nav Bar */
+.navbar {
+  background-color: var(--primary);
+
+}
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding: 0 25px;
-    width: 100vw;
-    margin-top: 14px;
-    background-color: var(--primary)
-  }
+    padding: 0 0px;
+    width: 1440px;
+    margin: 0 auto; 
+    align-items: center;}
   
   nav ul {
     display: flex;
     list-style: none;
     font-family: 'Bowlby One', cursive;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
   }
   
   ul li a {
@@ -41,5 +89,62 @@ body {background-color: var(--g100)}
 
   p {font-family: 'Akshar', sans-serif;}
 
-  .logo img {width: 16vw;
-    height: auto;}
+  .logo img {width: 12vw;
+    height: auto;
+  margin-left: 25px;}
+
+  /* Hero Image */
+.hero {background-image: url("images/hero-image.jpeg");
+  width: 1440px;
+  height: 70vh;
+  background-repeat:no-repeat;
+  background-position: center; 
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+position: relative;}
+
+  .hero-content { background-color: rgba(300,300,300,.4); 
+  padding:30px;
+  text-align: center;
+  position: absolute;
+  top: 320px;
+  right: 60px;
+  padding-top: 10px;}
+
+  .hero-content h5 {text-align: left}
+
+  /* Who Was DOOM? */
+
+  .biocon {margin: 50px;
+  }
+  .card {background-color: white;
+  outline: 4px solid black;
+margin: 40px;}
+
+.biocard {display: flex; 
+  align-items: center;}
+
+.cardcontent {margin: 30px;}
+
+.card h2 {margin-bottom: 30px;}
+
+/* DOOM's Discography */
+.comic  {background-color: var(--primary);
+height: 1377px;}
+.comic, .comictop, .comicbottom {display: flex; 
+  margin: 35px; 
+  justify-content: space-between;  
+  align-items: start;
+  padding: 0 0px;
+  width: 1440px;}
+
+.disc {margin: 50px;}
+
+.widecard,.smallcard {display: flex; height: 318px; background-color: white; }
+.disccard img {margin: 20px;}
+.smallcardcontent {transform: rotate(-90deg); margin-bottom: -60px; margin-left: 30px;}
+.widecard {width: 900px;} .widecard h2 {margin-top: 30px;}
+.smallcard {width: 422px;} .smallcard h2 {margin-top: 50px;}
