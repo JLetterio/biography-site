@@ -19,37 +19,41 @@ body {background-color: var(--g100)}
 h1,h2,h3,h4 {font-family: 'Bowlby One', cursive;
 }
 
-h1 {line-height: 75pt;
-font-size: 48pt;}
+h1 {line-height: 75px;
+font-size: 48px;}
 
-h2 {line-height: 26pt;
-font-size: 28pt;}
+h2 {line-height: 30px;
+font-size: 32px;}
 
-h3 {line-height: 22pt;
-font-size: 24pt;}
+h3 {line-height: 22px;
+font-size: 24px;}
 
 h4 {
-  line-height: 18pt;
-font-size: 18pt;}
+  line-height: 18px;
+font-size: 18px;}
 
-h5,p,.cardcopy,.bcbold {
+h5,p,.cardcopy,.bcbold, h6 {
   font-family: 'Akshar', sans-serif;
 }
 
-h5 {line-height: 30pt;
-font-size: 24pt;
+h5 {line-height: 40px;
+font-size: 32px;
 font-weight: 600;}
 
-p {line-height: 36pt;
-font-size: 20pt;
+h6 {line-height: 30px;
+  font-size: 24px;
+  font-weight: 600;}
+
+p {line-height: 36px;
+font-size: 20px;
 font-weight: 300;}
 
-.cardcopy {line-height: 28pt;
-font-size: 16pt;
+.cardcopy {line-height: 28px;
+font-size: 16px;
 font-weight: 300;}
 
-.bcbold {line-height: 25pt;
-font-size: 16pt;
+.bcbold {line-height: 25px;
+font-size: 16px;
 font-weight: 600;}
 
 
@@ -89,7 +93,7 @@ font-weight: 600;}
 
   p {font-family: 'Akshar', sans-serif;}
 
-  .logo img {width: 12vw;
+  .logo img {width: 10vw;
     height: auto;
   margin-left: 25px;}
 
@@ -108,7 +112,7 @@ position: relative;}
 
   .hero-content { background-color: rgba(300,300,300,.4); 
   padding:30px;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 320px;
   right: 60px;
@@ -133,18 +137,66 @@ margin: 40px;}
 
 /* DOOM's Discography */
 .comic  {background-color: var(--primary);
-height: 1377px;}
-.comic, .comictop, .comicbottom {display: flex; 
-  margin: 35px; 
+height: 1328px;  
+width: 1440px; 
+display: flex; 
+flex-direction: column; 
+margin: 45px; 
+padding: 0 0px;
+align-items:  center;}
+
+ .comictop, .comicbottom {display: flex; 
+  margin: 45px; 
   justify-content: space-between;  
-  align-items: start;
   padding: 0 0px;
-  width: 1440px;}
+gap: 45px;}
 
-.disc {margin: 50px;}
+.disccard .largecard img {width: 423px; 
+  height: 423px;}
 
-.widecard,.smallcard {display: flex; height: 318px; background-color: white; }
-.disccard img {margin: 20px;}
-.smallcardcontent {transform: rotate(-90deg); margin-bottom: -60px; margin-left: 30px;}
-.widecard {width: 900px;} .widecard h2 {margin-top: 30px;}
-.smallcard {width: 422px;} .smallcard h2 {margin-top: 50px;}
+.largecard {width: 1340px; height: 511px; 
+  display: flex; 
+  background-color: white;}
+
+.widecard,.smallcard {
+  display: flex;
+  height: 318px;
+  background-color: white;
+}
+
+.disccard img {margin: 30px; 
+  width: 260px; 
+  height: 260px; 
+  align-items: center;}
+
+.smallcardcontent {transform: rotate(-90deg); 
+  margin-bottom: -60px; 
+  margin-left: 30px;
+}
+
+.widecard {width: 872px;} 
+
+.widecard h2 {margin-top: 30px;} 
+.widecard p {width: 500px;} 
+.widecard h5 {margin-top: 15px; margin-bottom: 20px;}
+
+.smallcard {width: 422px; overflow: hidden;} 
+.smallcard h2 {margin-top: 50px; margin-bottom: 10px; }
+
+/* DOOM's Life */
+.lifecontent  {width: 835px; margin: 30px;}
+.legacy {width: 772px; height: 312px;}
+.tribute {width: 312px; height: 312px;}
+.liferow {display: flex; align-items: center; gap: 4px;}
+
+.lifeimgs {display: flex; 
+  text-align: center; 
+  gap: 40px; 
+  margin-left: 20px;} 
+
+  .lifeimgs img {width: 171px; 
+    height: 171px;}
+
+    .mask img {width: auto; height: 250px;}
+
+
