@@ -10,6 +10,7 @@ body {background-color: var(--g100)}
     --accent: #222E56;
     --g100: #EFE4DA;
 }
+html {scroll-behavior: smooth;}
 
 ::selection {
   background: #ff7c7c; /* WebKit/Blink Browsers */
@@ -28,7 +29,13 @@ h1,h2,h3,h4 {font-family: 'Bowlby One', cursive;
 
 h1 {line-height: 75px;
 font-size: 48px;
-margin-top: 30px;}
+margin-top: 60px;
+margin-bottom: 20px;}
+
+.hero-content h1 {line-height: 75px;
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 10px;}
 
 h2 {line-height: 30px;
 font-size: 32px;}
@@ -134,20 +141,17 @@ position: relative;}
 
   /* Who Was DOOM? */
 
-  .biocon {margin: 50px;
-  }
+  
   .card {background-color: white;
   outline: 4px solid black;
 margin: 40px;}
 
-.card-liferow {
-  margin: 20px;
-  background: white;
-  outline: 4px solid black;
+.card-liferow {margin-top: 40px;
   height: 300px;
 }
-
-
+.mask {margin-top: 40px;}
+.tribute {background-color: white;
+  outline: 4px solid black; display: flex; align-items: center;}
 
 .biocard {display: flex; 
   align-items: center;
@@ -212,7 +216,7 @@ width: 200px; }
 .lifecontent  {width: 835px; margin: 30px;}
 .legacy {width: 772px; height: 312px;}
 .tribute {width: 312px; height: 312px;}
-.liferow {display: flex; align-items: center; gap: 4px;}
+.liferow {display: flex; justify-content: space-between; gap: 4px; align-items: center;}
 
 .lifeimgs {display: flex; 
   text-align: center; 
@@ -229,20 +233,19 @@ width: 200px; }
 }
 
 /* More DOOM */
-.streaming { display: flex; 
+/* .streaming { display: flex; 
   align-items: center; 
   justify-content: center; 
-  /* width: 1440px;  */
   padding: 40, 0, 40, 0; 
   height: auto; 
-  gap: 40px;}
+  gap: 40px;} 
 
 
 iframe {border-radius: 0px;}
 .spotify { display: flex; 
   align-items: center; 
   justify-content: center; 
-  width: 700px;}
+  width: 700px;} 
 
 .apple { display: flex; 
   align-items: center; 
@@ -253,7 +256,16 @@ iframe {border-radius: 0px;}
 .youtube { display: flex; 
   align-items: center; 
   justify-content: center; 
-  gap: 40px}
+  gap: 40px}*/
+
+  .streaming { display: flex; 
+    align-items: start; 
+    justify-content: center; 
+  gap: 550px;} 
+
+iframe {border-radius: 10px;}
+
+.vidthree {margin-top: 25px;}
 
 /* Footer */
 footer {display:flex; 
@@ -268,10 +280,15 @@ footer {display:flex;
 
 .footernav {margin: 0 auto;}
 
-.nav {
+footer .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0px;
-  /* width: 1440px; */
-  margin: 0 auto; }
+  margin: 0 auto; } 
+ 
+  footer .logo img {margin: 0 auto;}
+footer .nav li {display: flex; align-items: center;} 
+
+.circles img {height: 57px; width: 57px;}
+.circles {display: flex; justify-content: space-evenly; align-items: center; width: 500px; margin: -15px auto 25px;}
