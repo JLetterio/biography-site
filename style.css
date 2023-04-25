@@ -9,10 +9,10 @@ body {
   background-color: var(--g100);
 }
 :root {
-  --primary: #870000;
+  --primary: #a40000;
   --secondary: #114d10;
   --accent: #222e56;
-  --g100: #efe4da;
+  --g100: #fef7f1;
 }
 html {
   scroll-behavior: smooth;
@@ -533,6 +533,8 @@ a img:hover {
     width: 100%;
     height: 100%;
   }
+
+  
 }
 /* #logo a.nav-trigger {
     position: absolute;
