@@ -5,18 +5,34 @@
 
 body {background-color: var(--g100)}
 :root {
-    --primary: #870000;
+    --primary: #a40000;
     --secondary: #114D10;
     --accent: #222E56;
     --g100: #EFE4DA;
 }
 html {scroll-behavior: smooth;}
 
+
+
+.navigation .logo {margin: auto 0; margin-left: 30px;}
+
+a img, a, .logo{
+  transition: 0.2s ease-in-out;
+}
+
+a img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.disccard a img:hover {transform: scale(1.05, 1.05);
+}
+
+
 ::selection {
-  background: #ff7c7c; /* WebKit/Blink Browsers */
+  background: #ff7c7c; 
 }
 ::-moz-selection {
-  background: #ff7c7c; /* Gecko Browsers */
+  background: #ff7c7c; 
 }
 
 .container {
@@ -80,10 +96,9 @@ font-weight: 600;}
     align-items: start;
     padding: 0 0px;
     background-color: var(--primary);
-
-    /* width: 1440px; */
-    margin: 0 auto; }
+   }
   
+
   nav ul {
     display: flex;
     list-style: none;
@@ -106,15 +121,15 @@ font-weight: 600;}
 
   a:hover {
     text-shadow: 4px 4px black;
-    
+
   }
+
+
 
   p {font-family: 'Akshar', sans-serif;}
 
-  .logo img {width: 10vw;
-    height: auto;
-  margin-left: 25px;
-margin-top: 10px;}
+  .logo img {width: 9vw;
+    height: auto;}
 
   /* Hero Image */
 .hero {background-image: url("images/hero-image.jpeg");
