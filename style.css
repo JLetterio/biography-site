@@ -1,22 +1,31 @@
-* { margin: 0;
-    padding: 0;}
-
-    /* Colors/Fonts */
-
-body {background-color: var(--g100)}
-:root {
-    --primary: #a40000;
-    --secondary: #114D10;
-    --accent: #222E56;
-    --g100: #EFE4DA;
+* {
+  margin: 0;
+  padding: 0;
 }
-html {scroll-behavior: smooth;}
 
+/* Colors/Fonts */
 
+body {
+  background-color: var(--g100);
+}
+:root {
+  --primary: #a40000;
+  --secondary: #114d10;
+  --accent: #222e56;
+  --g100: #efe4da;
+}
+html {
+  scroll-behavior: smooth;
+}
 
-.navigation .logo {margin: auto 0; margin-left: 30px;}
+.navigation .logo {
+  margin: auto 0;
+  margin-left: 30px;
+}
 
-a img, a, .logo{
+a img,
+a,
+.logo {
   transition: 0.2s ease-in-out;
 }
 
@@ -24,15 +33,15 @@ a img:hover {
   transform: scale(1.2, 1.2);
 }
 
-.disccard a img:hover {transform: scale(1.05, 1.05);
+.disccard a img:hover {
+  transform: scale(1.05, 1.05);
 }
-
 
 ::selection {
-  background: #ff7c7c; 
+  background: #ff7c7c;
 }
 ::-moz-selection {
-  background: #ff7c7c; 
+  background: #ff7c7c;
 }
 
 .container {
@@ -40,270 +49,373 @@ a img:hover {
   margin: 0 auto;
 }
 
-h1,h2,h3,h4 {font-family: 'Bowlby One', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bowlby One", cursive;
 }
 
-h1 {line-height: 75px;
-font-size: 48px;
-margin-top: 60px;
-margin-bottom: 20px;}
+h1 {
+  line-height: 75px;
+  font-size: 48px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
 
-.hero-content h1 {line-height: 75px;
+.hero-content h1 {
+  line-height: 75px;
   font-size: 48px;
   margin-top: 10px;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+}
 
-h2 {line-height: 30px;
-font-size: 32px;}
+h2 {
+  line-height: 30px;
+  font-size: 32px;
+}
 
-h3 {line-height: 22px;
-font-size: 24px;}
+h3 {
+  line-height: 22px;
+  font-size: 24px;
+}
 
 h4 {
   line-height: 18px;
-font-size: 18px;}
-
-h5,p,.cardcopy,.bcbold, h6 {
-  font-family: 'Akshar', sans-serif;
+  font-size: 18px;
 }
 
-h5 {line-height: 40px;
-font-size: 32px;
-font-weight: 600;}
+h5,
+p,
+.cardcopy,
+.bcbold,
+h6 {
+  font-family: "Akshar", sans-serif;
+}
 
-h6 {line-height: 30px;
+h5 {
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h6 {
+  line-height: 30px;
   font-size: 24px;
-  font-weight: 600;}
+  font-weight: 600;
+}
 
-p {line-height: 36px;
-font-size: 20px;
-font-weight: 300;}
+p {
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 300;
+}
 
-.cardcopy {line-height: 28px;
-font-size: 16px;
-font-weight: 300;}
+.cardcopy {
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 300;
+}
 
-.bcbold {line-height: 25px;
-font-size: 16px;
-font-weight: 600;}
-
+.bcbold {
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* Nav Bar */
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    padding: 0 0px;
-    background-color: var(--primary);
-   }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 0px;
+  background-color: var(--primary);
+}
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    font-family: 'Bowlby One', cursive;
-    margin-top: 1.5vw;
-    margin-bottom: 1.5vw;
-  }
-  
-  ul li a {
-    padding: 27px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+  font-family: "Bowlby One", cursive;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
 
-  a:hover {
-    text-shadow: 4px 4px black;
+ul li a {
+  padding: 27px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
 
-  }
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  text-shadow: 4px 4px black;
+}
 
+p {
+  font-family: "Akshar", sans-serif;
+}
 
-  p {font-family: 'Akshar', sans-serif;}
+.logo img {
+  width: 9vw;
+  height: auto;
+}
 
-  .logo img {width: 9vw;
-    height: auto;}
-
-  /* Hero Image */
-.hero {background-image: url("images/hero-image.jpeg");
-  /* width: 1440px; */
+/* Hero Image */
+.hero {
+  background-image: url("images/hero-image.jpeg");
   height: 668px;
-  background-repeat:no-repeat;
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; 
-position: relative;}
+  justify-content: center;
+  position: relative;
+}
 
-  .hero-content { background-color: rgba(300,300,300,.4); 
-  padding:30px;
+.hero-content {
+  background-color: rgba(300, 300, 300, 0.4);
+  padding: 30px;
   text-align: left;
   position: absolute;
   top: 320px;
   right: 60px;
-  padding-top: 10px;}
+  padding-top: 10px;
+}
+.hero-content h1,
+.doombio h1 {
+  margin-left: 0px;
+}
+.hero-content h5 {
+  text-align: left;
+}
 
-  .hero-content h5 {text-align: left}
+/* Who Was DOOM? */
 
-  /* Who Was DOOM? */
-
-  
-  .card {background-color: white;
+.card {
+  background-color: white;
   outline: 4px solid black;
-margin: 40px;}
+  margin: 40px;
+}
 
-.card-liferow {margin-top: 40px;
+.card-liferow {
+  margin-top: 40px;
   height: 300px;
 }
-.mask {margin-top: 40px;}
-.tribute {background-color: white;
-  outline: 4px solid black; display: flex; align-items: center;}
+.mask {
+  margin-top: 40px;
+}
+.tribute {
+  background-color: white;
+  outline: 4px solid black;
+  display: flex;
+  align-items: center;
+}
 
-.biocard {display: flex; 
+.biocard {
+  display: flex;
   align-items: center;
   background-color: white;
-  outline: 4px solid black;}
+  outline: 4px solid black;
+}
 
-.cardcontent {margin: 30px;}
+.cardcontent {
+  margin: 30px;
+}
 
-.card h2 {margin-bottom: 30px;}
-.card-liferow h2 {margin-bottom: 30px;}
+.card h2 {
+  margin-bottom: 30px;
+}
+.card-liferow h2 {
+  margin-bottom: 30px;
+}
 
 /* DOOM's Discography */
-.comic  {background-color: var(--primary);
-display: flex; 
-flex-direction: column; 
-align-items:  center;}
+.comic {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- .comictop, .comicbottom {display: flex; 
-  margin: 45px; 
-  justify-content: space-between;  
+.comictop,
+.comicbottom {
+  display: flex;
+  margin: 45px;
+  justify-content: space-between;
   padding: 0 0px;
-gap: 45px;}
+  gap: 45px;
+}
 
-.disccard .largecard img {width: 423px; 
-  height: 423px;}
+.disccard .largecard img {
+  width: 423px;
+  height: 423px;
+}
 
-.largecard {width: 1340px; height: 511px; 
-  display: flex; 
-  background-color: white;}
+.largecard {
+  width: 1340px;
+  height: 511px;
+  display: flex;
+  background-color: white;
+}
 
-.widecard,.smallcard {
+.widecard,
+.smallcard {
   display: flex;
   height: 318px;
   background-color: white;
 }
 
-.disccard img {margin: 30px; 
-  width: 260px; 
-  height: 260px; 
-  align-items: center;}
+.disccard img {
+  margin: 30px;
+  width: 260px;
+  height: 260px;
+  align-items: center;
+}
 
-.smallcardcontent {transform: rotate(-90deg); 
-  margin-bottom: -60px; 
+.smallcardcontent {
+  transform: rotate(-90deg);
+  margin-bottom: -60px;
   margin-left: 30px;
 }
 
-.widecard {width: 872px;} 
+.widecard {
+  width: 872px;
+}
 
-.widecard h2 {margin-top: 30px;} 
-.widecard p {width: 500px;} 
-.widecard h5 {margin-top: 15px; 
-  margin-bottom: 20px;}
+.widecard h2 {
+  margin-top: 30px;
+}
+.widecard p {
+  width: 500px;
+}
+.widecard h5 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 
-.smallcard {width: 422px; 
-  overflow: hidden;} 
+.smallcard {
+  width: 422px;
+  overflow: hidden;
+}
 
-.smallcard h2 {margin-top: 40px; 
+.smallcard h2 {
+  margin-top: 40px;
   margin-bottom: 10px;
-width: 200px; }
+  width: 200px;
+}
 
 /* DOOM's Life */
-.lifecontent  {width: 835px; margin: 30px;}
-.legacy {width: 772px; height: 312px;}
-.tribute {width: 312px; height: 312px;}
-.liferow {display: flex; justify-content: space-between; gap: 4px; align-items: center;}
 
-.lifeimgs {display: flex; 
-  text-align: center; 
-  gap: 60px; 
-  margin-left: 60px; 
-}
-.biocard h2 {margin-bottom: 30px;}
-
-.lifeimgs img {width: 171px; 
-    height: 171px;
+.doombio {
+  width: 1360px;
+  margin: 0 auto;
 }
 
-.mask img {width: auto; height: 250px;
+.lifecontent {
+  width: 835px;
+  margin: 30px;
+}
+.legacy {
+  width: 772px;
+  height: 312px;
+}
+.tribute {
+  width: 312px;
+  height: 312px;
+}
+.liferow {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
 }
 
-/* More DOOM */
-/* .streaming { display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  padding: 40, 0, 40, 0; 
-  height: auto; 
-  gap: 40px;} 
+.lifeimgs {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+  margin-left: 40px;
+}
+.biocard h2 {
+  margin-bottom: 30px;
+}
 
+.lifeimgs img {
+  width: 171px;
+  height: 171px;
+}
 
-iframe {border-radius: 0px;}
-.spotify { display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  width: 700px;} 
+.mask img {
+  width: auto;
+  height: 250px;
+}
 
-.apple { display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  width: 700px; 
-  height: 350px;}
+.streaming {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 550px;
+}
 
-.youtube { display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 40px}*/
+iframe {
+  border-radius: 10px;
+}
 
-  .streaming { display: flex; 
-    align-items: start; 
-    justify-content: center; 
-  gap: 550px;} 
-
-iframe {border-radius: 10px;}
-
-.vidthree {margin-top: 25px;}
+.vidthree {
+  margin-top: 25px;
+}
 
 /* Footer */
-footer {display:flex; 
-  align-items: center; 
+footer {
+  display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--primary);
 }
 
-.container .footernav .navbar {display: flex; 
-  align-items: center; 
-  justify-content: center;}
+.container .footernav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.footernav {margin: 0 auto;}
+.footernav {
+  margin: 0 auto;
+}
 
 footer .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0px;
-  margin: 0 auto; } 
- 
-  footer .logo img {margin: 0 auto;}
-footer .nav li {display: flex; align-items: center;} 
+  margin: 0 auto;
+}
 
-.circles img {height: 57px; width: 57px;}
-.circles {display: flex; justify-content: space-evenly; align-items: center; width: 500px; margin: -15px auto 25px;}
+footer .logo img {
+  margin: 0 auto;
+}
+footer .nav li {
+  display: flex;
+  align-items: center;
+}
+
+.circles img {
+  height: 57px;
+  width: 57px;
+}
+.circles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  margin: -15px auto 25px;
+}
